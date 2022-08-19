@@ -1,0 +1,23 @@
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: $c_txt_title;
+}
+
+h1 {
+    font-size: 1.35rem;
+}
+
+h2 {
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}

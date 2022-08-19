@@ -1,0 +1,69 @@
+main {
+    background-color: $c_bg_main;
+    padding-top: 3rem;
+    padding-bottom: 11rem;
+    position: relative;
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        section {
+            padding: 3rem 2rem 2rem;
+            box-shadow: 0 0 8px 0px hsla(0, 0%, 0%, 0.05);
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: $c_bg_card;
+
+            .section-description-container {
+                
+                h2 {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .illustration {
+                width: 90%;
+                max-width: 600px;
+                aspect-ratio: 1 / 1 ;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        #section1 {
+
+            .illustration {
+                background-image: url(../img/illustration-grow-together.svg);
+            }
+        }
+
+        #section2 {
+
+            .illustration {
+                background-image: url(../img/illustration-flowing-conversation.svg);
+            }
+        }
+
+        #section3 {
+
+            .illustration {
+                background-image: url(../img/illustration-your-users.svg);
+            }
+        }
+
+        #call-to-action {
+            width: calc(100% - 30px);
+            position: absolute;
+            bottom: 0;
+            transform: translateY(35%);
+            flex-direction: column;
+            padding: 2rem 0.5rem 2rem;
+        }
+
+    }
+}

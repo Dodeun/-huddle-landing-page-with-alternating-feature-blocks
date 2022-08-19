@@ -1,0 +1,211 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        text-align: left;
+    }
+
+    .container {
+        max-width: 1240px;
+    }
+    
+    /* TEXT */
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    /* BTN */
+
+    .btn-primary, .btn-call-to-action {
+        padding: 1rem 0;
+        letter-spacing: 0.03rem;
+        margin: 0;
+    }
+
+    .btn-basic {
+        padding: 0.7rem 3.5rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        max-width: 280px;
+        font-size: 0.75rem;
+    }
+    
+    .btn-call-to-action {
+        max-width: 400px;
+        font-size: 1.05rem;
+    }
+
+    /* HEADER */
+
+    header {
+        background-image: url(../img/bg-hero-desktop.svg);
+
+        .header-container {
+            padding: 2.8rem 0 3.8rem;
+
+            .header-container__top-wrapper {
+                margin-bottom: 4.2rem;
+    
+                img {
+                    max-width: 200px;
+                }
+            }
+            
+            .header-container__bottom-wrapper {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+    
+                .header-description-container {
+                    margin-bottom: 0;
+                    max-width: 510px;
+    
+                    h1 {
+                        margin-bottom: 1.5rem;
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                        margin-bottom: 2rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                img {
+                    width: 40%;
+                    max-width: 680px;
+                }
+            }
+        }
+    }
+
+    /* MAIN */
+
+    main {
+        padding-top: 8.5rem;
+        padding-bottom: 19rem;
+        
+        .main-container {
+            align-items: center;
+            gap: 2.5rem;
+    
+            section {
+                width: 100%;
+                padding: 3rem 2rem 3rem 6.5rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+    
+                .section-description-container {
+                    flex: 6;
+                    max-width: 500px;
+
+                    h2 {
+                        margin-bottom: 1rem;
+                    }
+                }
+    
+                .illustration {
+                    flex: 4;
+                    width: 100%;
+                    max-width: 420px;
+                    aspect-ratio: 1 / 0.8 ;
+                    margin: 0;
+                }
+
+                &:nth-child(2n) {
+                    flex-direction: row-reverse;
+                }
+            }
+    
+            #call-to-action {
+                max-width: 800px;
+                padding: 3.7rem 0.5rem 2.85rem;
+                transform: translateY(30%);
+            }
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+        font-size: 0.8rem;
+    
+        .footer-container {
+            margin-bottom: 2rem;
+    
+            .logo {
+                margin-bottom: 1.5rem;
+            }
+    
+            .links-container {
+                flex-direction: row;
+                gap: 2rem;
+    
+                .contacts {
+                    flex: 1;
+                    gap: 1rem;
+                    margin-bottom: 0;
+                    
+                    li p {
+                        font-size: 0.8rem;
+                    }
+                }
+    
+                .internal-links {
+                    flex: 1;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 0;
+                }
+    
+                .social-links {
+                    flex: 1;
+                }
+            }
+    
+            .copyright {
+                text-align: right;
+                font-size: 0.65rem;
+                transform: translateY(-100%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    header {
+
+        .header-container {
+            
+            .header-container__bottom-wrapper {
+
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
